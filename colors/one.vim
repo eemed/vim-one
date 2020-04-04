@@ -2,7 +2,6 @@
 " Author:  Ramzi Akremi
 " License: MIT
 " Version: 1.1.1-pre
-
 " Global setup =============================================================={{{
 
 if exists("*<SID>X")
@@ -286,8 +285,6 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   endfunction
 
   " }}}
-
-
   " Color definition --------------------------------------------------------{{{
   let s:dark = 0
   if &background ==# 'dark'
@@ -372,8 +369,8 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('CursorLineNr', s:syntax_fg,     s:syntax_cursor,  'none')
   call <sid>X('MatchParen',   s:hue_5,         s:syntax_cursor,  'underline,bold')
   call <sid>X('Italic',       '',              '',               s:italic)
-  call <sid>X('ModeMsg',      s:hue_6,     '',               '')
-  call <sid>X('MoreMsg',      s:hue_6,     '',               '')
+  call <sid>X('ModeMsg',      s:hue_6_2,     '',               '')
+  call <sid>X('MoreMsg',      s:hue_6_2,     '',               '')
   call <sid>X('NonText',      s:mono_3,        '',               'none')
   call <sid>X('PMenu',        '',              s:pmenu,          '')
   call <sid>X('PMenuSel',     '',              s:mono_4,         '')
@@ -383,7 +380,7 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('Search',       s:syntax_bg,     s:hue_6_2,        '')
   call <sid>X('SpecialKey',   s:hue_6,  '',               'none')
   call <sid>X('Whitespace',   s:mono_3,        '',               'none')
-  call <sid>X('StatusLine',   s:syntax_fg,     s:syntax_cursor,  'none')
+  call <sid>X('StatusLine',   s:syntax_bg,     s:hue_2,  'none')
   call <sid>X('StatusLineNC', s:mono_3,        '',               '')
   call <sid>X('TabLine',      s:mono_1,        s:syntax_bg,      '')
   call <sid>X('TabLineFill',  s:mono_3,        s:visual_grey,    'none')
